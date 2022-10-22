@@ -1,0 +1,305 @@
+.container-onboarding {
+  padding: 0px 0;
+  height: auto;
+}
+
+.onboarding-items {
+  padding: 50px 150px 100px 150px;
+  height: auto;
+  background-image: url("/img/banners/Vector44.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 500px) {
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 20px 10px 20px 10px;
+  }
+  .items-vendedor {
+    display: flex;
+    margin: 28px 0;
+    margin-top: 0px !important;
+    @media screen and (max-width: 500px) {
+      display: flex;
+      flex-direction: column-reverse;
+      // flex-direction: column;
+    }
+    > img {
+      width: 400px;
+      @media screen and (max-width: 500px) {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.contenedor-onboarding-opciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.title-onboarding-opciones {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 158%;
+  letter-spacing: 0.0075em;
+  @media screen and (max-width: 500px) {
+    font-size: 18px;
+    text-align: center;
+  }
+  > span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 158%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0075em;
+    color: #e91e63;
+    margin-right: 5px;
+    @media screen and (max-width: 500px) {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      /* font-size: 30px; */
+      line-height: 158%;
+      /* display: -webkit-flex; */
+      display: -moz-box;
+      /* display: flex; */
+      /* -webkit-align-items: center; */
+      -moz-box-align: center;
+      /* align-items: center; */
+      /* letter-spacing: 0.0075em; */
+      color: #e91e63;
+      margin-right: 5px;
+    }
+  }
+}
+
+.ul-options-onboarding {
+  font-size: 24px;
+  line-height: 158%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0075em;
+  color: #696969ab;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  > li {
+    list-style: square;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+  }
+}
+
+.title-2-onboarding {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 58px;
+  color: #e91e63;
+  margin-top: 20px;
+  @media screen and (max-width: 500px) {
+    font-size: 20px;
+  }
+}
+
+.como-ser-vendedor-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  > h5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 58px;
+    /* identical to box height */
+    margin-top: 0 !important;
+    color: #e91e63;
+    @media screen and (max-width: 500px) {
+      font-size: 20px;
+    }
+  }
+}
+.cards-onboarding-como-ser {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+}
+.cards-ser-vendedor {
+  height: 300px;
+  width: 220px;
+  background: #e91e63;
+  color: #fff;
+  // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 10px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  > img {
+    width: 50px;
+    margin-bottom: auto;
+  }
+  > div {
+    font-weight: 500;
+    font-size: 16px;
+    /* identical to box height, or 38px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.0075em;
+
+    color: #fff;
+  }
+  > span {
+    margin-bottom: auto;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+.card-white {
+  background: #fff;
+  color: #e91e63;
+  > div {
+    font-weight: 600;
+    font-size: 16px;
+    /* identical to box height, or 38px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.0075em;
+
+    color: #696969;
+  }
+  > span {
+    margin-bottom: auto;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #696969;
+  }
+}
+
+.form-ser-vendedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.title-form-registro-onboarding {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 58px;
+  color: #e91e63;
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+  }
+}
+
+.container-register-onboarding {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+  > div {
+    > input {
+      width: 100%;
+      margin: 5px 0;
+    }
+    > .p-password {
+      > input {
+        width: 100%;
+        margin: 5px 0;
+      }
+    }
+  }
+}
+
+.button-registro-onboarding {
+  margin: 0 auto;
+  align-self: center;
+  justify-self: center;
+  width: 200px;
+  grid-column: span 2;
+}
+
+.container-felicitaciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100px;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 158%;
+    /* identical to box height, or 76px */
+    margin: 10px 0 5px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.0075em;
+
+    color: #e91e63;
+  }
+  .div-felicidades-1 {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 158%;
+    /* identical to box height, or 38px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.0075em;
+    color: #696969;
+    margin-bottom: auto;
+  }
+  .div-felicidades-2 {
+    padding: 5px 15px;
+    font-weight: 300;
+    font-size: 15px;
+    /* or 38px */
+    text-align: center;
+    margin-top: 20px;
+    color: #696969;
+  }
+}
+
+.button-volver-felicidades {
+  width: 200px !important;
+  margin: 0 auto !important;
+  > span {
+    font-weight: 500 !important;
+  }
+}

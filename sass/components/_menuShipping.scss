@@ -1,0 +1,61 @@
+.container-menu-option-shipping {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-around;
+  align-items: center;
+  .container-card-option-shipping {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 0px;
+    @media screen and (max-width: 900px) {
+      padding: 37px 0px;
+      margin-bottom: auto;
+    }
+    img {
+      height: 60px;
+      margin-bottom: 10px;
+      @media screen and (max-width: 900px) {
+        height: 40px;
+        margin-bottom: 10px;
+      }
+      @media screen and (max-width: 500px) {
+        height: 20px;
+        margin-bottom: 5px;
+      }
+    }
+    .title-card-option {
+      font-size: 27px;
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 33px;
+      margin: 10px 0px;
+      @media screen and (max-width: 900px) {
+        font-size: 13px;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 50%;
+      }
+    }
+    .description-card-option {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 15px;
+      text-align: center;
+      @media screen and (max-width: 900px) {
+        font-size: 13px;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 50%;
+      }
+    }
+  }
+}

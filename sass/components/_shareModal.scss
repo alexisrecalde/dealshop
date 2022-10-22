@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.modal-share-dialog > .p-dialog-header {
+  border-bottom: 0 none;
+  background: #ffffff;
+  color: #3d3d3d;
+  font-size: 15px;
+  padding: 25px 25px 15px 25px;
+
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+}
+
+.modal-share-dialog > .p-dialog-header > .p-dialog-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.modal-share-dialog > .p-dialog-header > .p-dialog-header-icons {
+  color: #878787;
+  font-size: 17px;
+  background: #f2f3fb;
+  height: 33px;
+  width: 33px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.modal-share-dialog > .p-dialog-content > .p-divider {
+  margin: 5px 0;
+  padding: 0;
+}
+.modal-share-dialog > .p-dialog-content > .content > .icons span{
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+  .modal-share-dialog > .p-dialog-content > .content > .icons{
+    margin: 15px 0 20px 0;
+    display: flex;
+    padding: 0;
+  }
+  .modal-share-dialog > .p-dialog-content > .content >  p{
+    font-size: 16px;
+  }
+  .content .icons span{
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    margin: 0 10px;
+  }
+  .icons span i{
+    transition: transform 0.3s ease-in-out;
+  }
+  .icons span:nth-child(1){
+    color: #1877F2;
+    border-color: #b7d4fb;
+  }
+  .icons span:nth-child(1):hover{
+    background: #1877F2;
+  }
+  .icons span:nth-child(2){
+    color: #46C1F6;
+    border-color: #b6e7fc;
+  }
+  .icons span:nth-child(2):hover{
+    background: #46C1F6;
+  }
+  .icons span:nth-child(3){
+    color: #0088cc;
+    border-color: #b3e6ff;
+  }
+  .icons span:nth-child(3):hover{
+    background: #0088cc;
+  }
+  .icons span:nth-child(4){
+    color: #25D366;
+    border-color: #bef4d2;
+  }
+  .icons span:nth-child(4):hover{
+    background: #25D366;
+  }
+  .icons span:nth-child(5){
+    color: #0088cc;
+    border-color: #b3e6ff;
+  }
+  .icons span:nth-child(5):hover{
+    background: #0088cc;
+  }
+  .icons span:hover{
+    color: #fff;
+    border-color: transparent;
+  }
+  .icons span:hover i{
+    transform: scale(1.2);
+  }
+  .modal-share-dialog > .p-dialog-content > .content > .field{
+    display: flex;
+    align-items: center;
+    margin: 12px 0 -5px 0;
+    height: 45px;
+    border-radius: 4px;
+    padding: 0 5px;
+    border: 1px solid #e1e1e1;
+  }
+  .modal-share-dialog > .p-dialog-content > .content > .field.active{
+    border-color: #7d2ae8;
+  }
+  .modal-share-dialog > .p-dialog-content > .content >  .field i{
+    width: 50px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .modal-share-dialog > .p-dialog-content > .content >  .field.active i{
+    color: #7d2ae8;
+  }
+  .modal-share-dialog > .p-dialog-content > .content > .field input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+  }
+  .modal-share-dialog > .p-dialog-content > .content >  .field button{
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: #EE3976;
+  }
+  .modal-share-dialog > .p-dialog-content > .content >  .field button:hover{
+    background: #EE3976;
+  }

@@ -1,0 +1,40 @@
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1rem;
+  min-width: 80%;
+  overflow: hidden;
+  background: #f7f7f7;
+}
+
+.content-table thead tr {
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 0.5rem 0.7rem;
+}
+
+.content-table tr td:nth-child(1) {
+  width: 50%;
+}
+
+.content-table > tbody > tr {
+  border-bottom: 1px solid #dddddd;
+  transition: all 0.1s ease-in;
+  font-weight: 500;
+  height: 40px;
+}
+
+.active-row {
+  background: #eaeaea;
+  color: var(--main-color);
+}
+
+.dialog-fecha-asignar {
+  > .p-dialog-content {
+    overflow-y: visible !important;
+  }
+}

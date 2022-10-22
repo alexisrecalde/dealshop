@@ -1,0 +1,83 @@
+.card-filtro-column {
+  margin-top: 10px;
+  .span-title-filter {
+    margin-right: auto;
+  }
+  .p-card-body {
+    padding: 0 !important;
+    width: 100%;
+    .p-card-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      justify-content: flex-start;
+      padding: 10px 0 !important;
+      span {
+        font-weight: 500;
+        font-size: 15px;
+      }
+    }
+  }
+}
+.column-fil {
+  margin-top: 20px !important;
+}
+
+.card-container-filtros {
+  width: 100%;
+  height: auto;
+  padding: 5px 20px !important;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 6px 18px #d4d6d8, -6px -6px 18px #f4f6f8;
+  box-shadow: 6px 6px 18px #d4d6d8, -6px -6px 18px #f4f6f8;
+  .p-card-body {
+    padding: 0 !important;
+    width: 100%;
+    .p-card-content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      > .Collapsible {
+        width: 100%;
+        > span{
+          width: 100%;
+          div{
+            width: 100%;
+          }
+        }
+      }
+      > span {
+        font-weight: 500;
+        font-size: 15px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+  background: rgba(233, 30, 99, 1) !important;
+}
+
+.title-contain-row {
+  width: 250px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card-rango > .p-card-body > .p-card-content > .p-slider {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  > span {
+    background: #e91e63;
+    border: none;
+  }
+}
+
+.sidebar-filter {
+  width: 22.5rem !important;
+}

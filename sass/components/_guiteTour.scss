@@ -1,0 +1,75 @@
+.highlightClass {
+  box-shadow: none !important;
+}
+
+.inicioTooltip {
+  width: auto;
+  max-width: fit-content !important;
+  position: relative;
+  div {
+    font-family: "Mulish", sans-serif !important;
+    font-weight: 600;
+    font-size: 13px !important;
+  }
+}
+
+.myTooltipClass {
+  background-color: #7034c2 !important;
+  color: #fff;
+  > .introjs-tooltiptext {
+    font-family: "Mulish", sans-serif !important;
+    font-weight: 600;
+    font-size: 13px !important;
+  }
+  > .introjs-bullets {
+    position: absolute;
+    left: 20px;
+  }
+  > .introjs-tooltip-header {
+    .introjs-tooltip-title {
+      font-weight: 800 !important;
+      font-size: 18px !important;
+      font-family: "Mulish", sans-serif !important;
+    }
+  }
+  > .introjs-tooltipbuttons {
+    border-top: none !important;
+    width: 200px;
+    margin-left: auto;
+    :nth-child(1) {
+      border: none !important;
+      background: transparent !important;
+      color: #fff !important;
+      font-family: "Mulish", sans-serif !important;
+      font-weight: 600;
+      text-shadow: none !important;
+      font-size: 12px !important;
+    }
+    :nth-child(2) {
+      background: #fff;
+      color: #6662ce !important;
+      font-family: "Mulish", sans-serif;
+      font-weight: 600;
+      font-size: 12px !important;
+    }
+  }
+}
+
+.introjs-arrow.top {
+  border-bottom-color: #7034c2 !important;
+}
+
+.introjs-skipbutton {
+  color: #fff !important;
+}
+
+.introjs-arrow.top-middle {
+  border-bottom-color: #7034c2 !important;
+}
+
+.introjs-arrow.bottom-right {
+  border-top-color: #7034c2 !important;
+}
+// .highlightClass{
+//   border: none !important;
+// }

@@ -1,0 +1,45 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.swal2-container {
+  z-index: 10000 !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.DayPickerInput-Overlay {
+  z-index: 20 !important
+}
+
+.css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+  color: #f50057 !important;
+}
+
+.MuiFormLabel-root.Mui-focused {
+  color: #00bcd4 !important;
+}
+.MuiInput-underline:after {
+  border-color: #00bcd4 !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}

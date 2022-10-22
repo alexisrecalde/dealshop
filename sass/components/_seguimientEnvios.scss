@@ -1,0 +1,93 @@
+.container-seguimiento-envios {
+  padding: 100px 120px;
+  z-index: 11;
+  position: relative;
+  @media screen and (max-width: 900px) {
+    padding: 20px 10px;
+  }
+}
+.container-seguimiento-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title-seguimiento-card-camion {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 158%;
+  /* identical to box height, or 76px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.0075em;
+
+  color: #e91e63;
+}
+
+.span-seguimiento-card-camion {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 158%;
+  /* identical to box height, or 38px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0075em;
+  color: #696969;
+  @media screen and (max-width: 600px) {
+    font-size: 15px !important;
+  }
+}
+
+.dialog-seguimiento {
+  width: 40vw;
+  @media screen and (max-width: 600px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.dialog-seguimiento > .p-dialog-header {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.p-timeline .p-timeline-event-marker {
+  border: 2px solid #e91e63 !important;
+}
+
+.p-timeline.p-timeline-vertical .p-timeline-event-connector {
+  animation: myAnim 2s ease 0s 1 normal forwards;
+  @keyframes myAnim {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 0.2;
+    }
+
+    24% {
+      opacity: 0.3;
+    }
+
+    40% {
+      opacity: 0.5;
+      animation-timing-function: ease-in;
+    }
+
+    65% {
+      opacity: 0.7;
+      animation-timing-function: ease-in;
+    }
+
+    82% {
+      opacity: 0.8;
+      animation-timing-function: ease-in;
+    }
+
+    93% {
+      opacity: 1;
+      animation-timing-function: ease-in;
+    }
+  }
+}

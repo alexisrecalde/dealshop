@@ -1,0 +1,139 @@
+.compra-id-container {
+  padding: 20px 120px;
+  @media screen and (max-width: 500px) {
+    padding: 20px 20px;
+  }
+}
+
+.container-compra {
+  margin: 20px 0;
+}
+.compra-id-foto-info > .p-card-body > .p-card-content {
+  display: flex !important;
+  align-items: center;
+  width: 100%;
+  padding: 10px 40px;
+  @media screen and (max-width: 500px) {
+    padding: 10px 10px;;
+  }
+}
+
+.compra-id-foto-info > .p-card-body > .p-card-content > img {
+  margin-left: auto;
+}
+
+.container-compra > .p-card-body > .p-card-content > img {
+  width: auto;
+  height: 100px;
+  @media screen and (max-width: 500px) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.info-compra-id-seguimiento {
+  display: flex;
+  flex-direction: column !important;
+  padding: 0px 40px;
+  @media screen and (max-width: 500px) {
+    padding: 0px 10px;;
+  }
+}
+
+.info-compra-id-seguimiento > .p-card-body > .p-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-div-compra-id {
+  display: flex;
+  flex-direction: column;
+  span {
+    margin: 5px 0;
+  }
+}
+.button-compra-id {
+  width: 400px !important;
+  margin: 0px auto;
+  margin-top: 10px !important;
+  @media screen and (max-width: 500px) {
+    width: 80% !important;
+  }
+  
+}
+.estado-envio-compra-id {
+  font-weight: 600;
+  font-size: 20px;
+  /* identical to box height, or 57px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0075em;
+
+  color: #2fb670;
+
+}
+
+.fecha-envio-compra-id {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 158%;
+  /* or 47px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0075em;
+
+  color: #696969;
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+  }
+}
+
+.domicilio-envio-compra-id {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 158%;
+  /* identical to box height, or 38px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0075em;
+
+  color: #696969;
+}
+
+.ayuda-compra-id {
+  span {
+    cursor: pointer;
+  }
+}
+
+.item-compra-ayuda-id {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 158%;
+  /* or 47px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0075em;
+
+  color: #262626;
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+  }
+}
+
+.item-compra-ayuda-id-2 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 158%;
+  /* or 47px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0075em;
+
+  color: #262626;
+}

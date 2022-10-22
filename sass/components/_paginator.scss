@@ -1,0 +1,75 @@
+.p-paginator {
+  background: transparent !important;
+  color: #6c757d;
+  border: none !important;
+  border-width: 0;
+  padding: 0.5rem 1rem;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background: #ffffff;
+  border: 1px solid #e91e63;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #e91e63;
+  line-height: 20px;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page {
+  background-color: transparent;
+  border: 0 none;
+  color: #6c757d;
+  min-width: 3rem;
+  height: 3rem;
+  margin: 0.143rem;
+  background: #ffffff;
+  border: 1px solid #dfe3e8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+
+
+.p-paginator > .p-paginator-next {
+  border: 0 none;
+  color: #6c757d;
+  min-width: 3rem;
+  height: 3rem;
+  margin: 0.143rem;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #dfe3e8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.p-paginator > .p-paginator-prev {
+  border: 0 none;
+  color: #6c757d;
+  min-width: 3rem;
+  height: 3rem;
+  margin: 0.143rem;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #dfe3e8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-left: auto;
+  @media screen and (max-width: 900px) {
+    margin-left: 0 !important;
+  }
+}

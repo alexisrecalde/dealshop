@@ -1,0 +1,94 @@
+import { useRouter } from 'next/router';
+import { useQuery } from 'react-query';
+import Head from 'next/head';
+import { connect } from 'react-redux';
+import { useState } from 'react';
+
+import PropTypes from 'prop-types';
+import { createStructuredSelector } from 'reselect';
+import { styled } from '@mui/material/styles';
+import Backdrop from '@mui/material/Backdrop';
+
+import { selectUserToken } from '../../../redux/user/user.selector';
+import { getUsers } from '../../../queries/users/users.queries';
+
+import withAuth, { roles } from '../../../utils/auth.utils';
+import Spinner from '../../../components/spinner/spinner.component';
+import ErrorComponent from '../../../components/error/errorDefault.component';
+import UsersFilterComponent from '../../../components/filters/usersFilter/usersFilter.component';
+import UserTableComponent from '../../../components/table/userTable/userTable.component';
+
+const UsersPage = ({ authToken }) => {
+  const router = useRouter();
+  const { firstName, lastName, userType, email } = router.query;
+  const [open, setOpen] = useState(false);
+
+  const { isLoading, isError, data } = useQuery(
+    ['users', { authToken, statusId: 1, firstName, lastName, userType, email }],
+    getUsers
+  );
+
+  const header = () => {
+    return (
+      <Head>
+        <title>Dealshop - Habilitar usuarios</title>
+        <meta name="author" content="Dealshop" />
+        <meta name="description" content="Habilitar usuarios" key="title" />
+        <meta name="owner" content="Dealshop" />
+      </Head>
+    );
+  };
+
+  if (isLoading) {
+    return (
+      <div>
+        {header()}
+        <Spinner />
+      </div>
+    );
+  }
+
+  if (isError) {
+    return (
+      <div style={{ padding: '20px' }}>
+        {header()}
+        <ErrorComponent />
+      </div>
+    );
+  }
+
+  return (
+    <PageContainer>
+      {header()}
+      <h2 style={{ color: '#e91e63' }}>Habilitar usuarios</h2>
+      <UsersFilterComponent />
+      {data != undefined ? (
+        <UserTableComponent users={data.results} authToken={authToken} setOpen={setOpen} />
+      ) : (
+        <h2>No se encontraron usuarios</h2>
+      )}
+      <Backdrop open={open} style={{ zIndex: '3000' }}>
+        <Spinner />
+      </Backdrop>
+    </PageContainer>
+  );
+};
+
+const PageContainer = styled.div`
+  padding: 20px 20px 40px 20px;
+  background-image: url('/img/Sprinkle.svg');
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  min-height: 61vh;
+`;
+
+UsersPage.propTypes = {
+  authToken: PropTypes.string.isRequired,
+};
+
+const mapStateToProps = createStructuredSelector({
+  authToken: selectUserToken,
+});
+
+export default withAuth(connect(mapStateToProps, null)(UsersPage), [roles.SUPER_ADMIN, roles.ADMIN]);

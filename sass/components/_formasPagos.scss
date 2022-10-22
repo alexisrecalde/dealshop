@@ -1,0 +1,66 @@
+.formas-pagos-home {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  padding: 8px 0px;
+  background-color: #fff;
+  .grid-container {
+    display: grid;
+    // grid-auto-flow: column;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+    grid-template-columns: max-content 32px max-content 32px max-content;
+    @media screen and (max-width: 900px) {
+      grid-template-columns: 1fr 12px 1fr !important;
+    }
+    .container {
+      display: grid;
+      grid-auto-flow: column;
+      -webkit-box-align: center;
+      align-items: center;
+      gap: 10px;
+      .icon-container {
+        display: flex;
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+      }
+      div {
+        p,
+        a {
+          font-size: 14px;
+          font-family: "Roboto", sans-serif;
+          font-weight: 300;
+          margin: 0;
+          @media screen and (max-width: 900px) {
+            font-size: 10px !important;
+          }
+        }
+      }
+    }
+    .line {
+      width: 1px;
+      background-color: rgb(218, 218, 218);
+      height: 48px;
+      justify-self: center;
+    }
+  }
+}
+
+.option-2-formas {
+  color: rgb(0, 106, 253);
+  text-decoration: none;
+}
+
+.container-img-pagos {
+  @media screen and (max-width: 900px) {
+    display: none !important;
+  }
+}
+
+.line-desktop {
+  @media screen and (max-width: 900px) {
+    display: none !important;
+  }
+}

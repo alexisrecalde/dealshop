@@ -1,0 +1,117 @@
+.container-img-footer {
+  position: relative;
+  height: 250px !important;
+  // padding-top: 50px;
+  margin-top: 13%;
+  @media screen and (max-width: 900px) {
+    margin-top: 32%;
+  }
+  img {
+    width: 100%;
+    position: absolute;
+    bottom: 249px;
+    left: 0px;
+    right: 0;
+    z-index: 0 !important;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      position: absolute;
+      bottom: 249px;
+      left: 0px;
+    }
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    height: auto;
+    padding: 0px 100px;
+    @media screen and (max-width: 900px) {
+      // display: none;
+      flex-direction: column;
+      padding: 0px 10px;
+      width: 80%;
+    }
+    .container-section-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 400px;
+      height: 100%;
+      margin-bottom: auto;
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
+      h5 {
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+      }
+      span {
+        margin-bottom: 10px;
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        @media screen and (max-width: 900px) {
+          font-size: 12px;
+        }
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        span {
+          margin-bottom: 10px;
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+        }
+        h5 {
+          margin: 0 !important;
+          margin-bottom: 10px !important;
+        }
+      }
+    }
+  }
+  .copyright-footer {
+    padding: 0 100px;
+    color: white;
+    @media screen and (max-width: 900px) {
+      padding: 0 0px;
+    }
+    .copyright-title {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 21px;
+    }
+  }
+}
+
+.container-img-footer-adm{
+  margin-top: 25% !important;
+  overflow-x: clip;
+  > img{
+    width: 100% !important;
+  }
+}
+
+.container-copy-social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+
+.social-media-con{
+  display: flex;
+  width: 80px;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}

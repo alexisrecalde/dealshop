@@ -1,0 +1,39 @@
+.container-button-mobile {
+}
+
+.span-item-menu-display {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 158%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0075em;
+  color: #64748b !important;
+}
+
+.title-categoria-display-menu {
+  justify-content: flex-start !important;
+  width: 100% !important;
+}
+
+.container-menu-mobile-all {
+  overflow-x: scroll;
+  /* padding-bottom: 100px !important; */
+  position: relative;
+  padding: 10px 0px 20px 10px;
+  height: 100%;
+}
+
+.container-mobile > .Collapsible {
+  margin: 10px 0;
+  border: 1px solid #989898;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.texto-preguntas-lef {
+  padding: 10px 5px;
+  color: #989898;
+  font-size: 13px;
+}

@@ -1,0 +1,130 @@
+import Head from 'next/head';
+import { useState } from 'react';
+import { createStructuredSelector } from 'reselect';
+import { selectUserToken } from '../../../redux/user/user.selector';
+import { connect } from 'react-redux';
+
+import { styled } from '@mui/material/styles';
+import withAuth, { roles } from '../../../utils/auth.utils';
+import MenuItem from '@mui/material/MenuItem';
+import InputLabel from '@mui/material/InputLabel';
+import Select from '@mui/material/Select';
+import ProductsRankTableComponent from '../../../components/dataGrid/statistics/productsRankTable.component';
+import SellersRankTableComponent from '../../../components/dataGrid/statistics/sellersRankTable.component';
+import DeliveryHistoryTableComponent from '../../../components/dataGrid/statistics/deliveryHistoryTable.component';
+import SalesBySellerTableComponent from '../../../components/dataGrid/statistics/salesBySellerTable.component';
+import Profits from '../../../components/table/statistics/profits.component';
+
+import { InputContainer } from '../../../components/input/input.styles';
+
+const statisticsPage = ({ authToken }) => {
+  const [reportSelected, setReportSelected] = useState('Profits');
+
+  const header = () => {
+    return (
+      <Head>
+        <title>Dealshop - Estadísticas</title>
+        <meta name="author" content="Dealshop" />
+        <meta name="description" content="Estadísticas" key="title" />
+        <meta name="owner" cont ent="Dealshop" />
+      </Head>
+    );
+  };
+
+  const reports = [
+    { id: 0, name: 'Ganancias', componentName: 'Profits' },
+    {
+      id: 1,
+      name: 'Ranking de Vendedores',
+      componentName: 'SellersRankComponent',
+    },
+    {
+      id: 2,
+      name: 'Ranking de Productos',
+      componentName: 'ProductsRankComponent',
+    },
+    {
+      id: 3,
+      name: 'Historial de Entregas',
+      componentName: 'DeliveryHistory',
+    },
+    {
+      id: 4,
+      name: 'Ventas por Vendedor',
+      componentName: 'SalesBySeller',
+    },
+  ];
+
+  const onReportSelected = (report) => {
+    setReportSelected(report.target.value);
+  };
+
+  const reportComponent = () => {
+    switch (reportSelected) {
+      case 'Profits':
+        return <Profits authToken={authToken} />;
+      case 'SellersRankComponent':
+        return <SellersRankTableComponent authToken={authToken} />;
+      case 'ProductsRankComponent':
+        return <ProductsRankTableComponent authToken={authToken} />;
+      case 'DeliveryHistory':
+        return <DeliveryHistoryTableComponent authToken={authToken} />;
+      case 'SalesBySeller':
+        return <SalesBySellerTableComponent authToken={authToken} />;
+      default:
+        break;
+    }
+  };
+
+  return (
+    <div>
+      {header()}
+      <Container>
+        <h2 style={{ color: '#e91e63' }}>Estadísticas</h2>
+        <MainComponentsContainer>
+          <InputContainer style={{ width: '33%', marginBottom: '20px' }}>
+            <InputLabel>Reporte</InputLabel>
+            <Select
+              value={reportSelected}
+              onChange={onReportSelected}
+              inputProps={{
+                name: 'Report',
+              }}
+              // MenuProps={{
+              //   anchorEl: null,
+              //   anchorOrigin: {
+              //     vertical: 'top',
+              //     horizontal: 'left',
+              //   },
+              //   transformOrigin: {
+              //     vertical: 'bottom',
+              //     horizontal: 'left',
+              //   },
+              // }}
+            >
+              {reports.map((report) => (
+                <MenuItem value={report.componentName}>{report.name}</MenuItem>
+              ))}
+            </Select>
+          </InputContainer>
+
+          {reportComponent()}
+        </MainComponentsContainer>
+      </Container>
+    </div>
+  );
+};
+
+const Container = styled.div`
+  padding: 20px;
+`;
+
+const MainComponentsContainer = styled.div`
+  padding: 20px;
+`;
+
+const mapStateToProps = createStructuredSelector({
+  authToken: selectUserToken,
+});
+
+export default withAuth(connect(mapStateToProps, null)(statisticsPage), [roles.SUPER_ADMIN, roles.ADMIN]);

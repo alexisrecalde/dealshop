@@ -1,0 +1,156 @@
+{
+  "menus": [
+    {
+      "id": 1,
+      "text": "Categorias",
+      "link": "/",
+      "megaMenus": [
+        {
+          "id": 3.1,
+          "megaMenuTitle": "",
+          "link": "/shop-layout",
+          "megamenuItems": [
+            {
+              "id": 3.21,
+              "text": "Griferias",
+              "link": "/shop"
+            },
+            {
+              "id": 3.22,
+              "text": "Hogar",
+              "link": "/shop"
+            },
+            {
+              "id": 3.23,
+              "text": "Muebles",
+              "link": "/shop"
+            },
+            {
+              "id": 3.24,
+              "text": "Sanitarios",
+              "link": "/shop"
+            },
+            {
+              "id": 3.26,
+              "text": "Electrodomesticos",
+              "link": "/shop"
+            },
+            {
+              "id": 3.27,
+              "text": "Aberturas",
+              "link": "/shop"
+            }
+          ]
+        },
+        {
+          "id": 3.2,
+          "megaMenuTitle": "Product Details Layout",
+          "link": "/product-layout",
+          "megamenuItems": [
+            {
+              "id": 3.232,
+              "text": "Product Layout 1",
+              "link": "/shop"
+            },
+            {
+              "id": 3.233,
+              "text": "Product Layout 2",
+              "link": "/shop"
+            },
+            {
+              "id": 3.2343,
+              "text": "Product Layout 3",
+              "link": "/shop"
+            },
+            {
+              "id": 3.5343,
+              "text": "Product Layout 4",
+              "link": "/shop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Ofertas",
+      "link": "/portfolio",
+      "dropdown": []
+    },
+    {
+      "id": 3,
+      "text": "Combos",
+      "link": "/shop",
+      "dropdown": [],
+      "megaMenus": [
+        {
+          "id": 3.1,
+          "megaMenuTitle": "shop layout",
+          "link": "/shop-layout",
+          "megamenuItems": [
+            {
+              "id": 3.21,
+              "text": "Shop 1",
+              "link": "/shop"
+            },
+            {
+              "id": 3.22,
+              "text": "Shop 2",
+              "link": "/shop"
+            },
+            {
+              "id": 3.23,
+              "text": "Shop 3",
+              "link": "/shop"
+            }
+          ]
+        },
+        {
+          "id": 3.2,
+          "megaMenuTitle": "Product Details Layout",
+          "link": "/product-layout",
+          "megamenuItems": [
+            {
+              "id": 3.232,
+              "text": "Product Layout 1",
+              "link": "/shop"
+            },
+            {
+              "id": 3.233,
+              "text": "Product Layout 2",
+              "link": "/shop"
+            },
+            {
+              "id": 3.2343,
+              "text": "Product Layout 3",
+              "link": "/shop"
+            },
+            {
+              "id": 3.5343,
+              "text": "Product Layout 4",
+              "link": "/shop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Ayuda",
+      "link": "/blog",
+      "dropdown": []
+    },
+    {
+      "id": 5,
+      "text": "Vender!",
+      "link": "/pages",
+      "dropdown": []
+    },
+    {
+      "id": 6,
+      "text": "Contactanos",
+      "link": "/contact",
+      "dropdown": []
+    }
+  ]
+}

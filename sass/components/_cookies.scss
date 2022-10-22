@@ -1,0 +1,18 @@
+.container-modal-cookie {
+  @media screen and (max-width: 900px) {
+    width: 85%;
+    height: fit-content;
+    padding: 15px 12px;
+    font-size: 14px;
+    > div {
+      font-size: 14px !important;
+      img {
+        width: 40px !important;
+        height: 40px !important;
+      }
+      button {
+        font-size: 14px !important;
+      }
+    }
+  }
+}

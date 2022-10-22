@@ -1,0 +1,76 @@
+.p-toast-message {
+  background: #ffff !important;
+  border: solid #e91e63 !important;
+  border-width: 0 0 0 6px;
+  color: #e91e63 !important;
+    position: relative;
+  z-index: 9999999;
+}
+
+.p-toast-message-content > .pi {
+  color: #e91e63 !important;
+}
+
+.p-toast-message-text > .p-toast-detail {
+  font-size: 15px !important;
+}
+
+.p-toast-icon-close > span {
+  color: #e91e63 !important;
+}
+
+.p-toast-top-right {
+  @media screen and (max-width: 500px) {
+    top: 20px;
+    right: 0px;
+    width: 90%;
+    left: 0px;
+    margin: 0 auto;
+  }
+}
+
+.container-back-image {
+  padding: 20px;
+  background-image: url("/img/Sprinkle.svg");
+}
+
+.dialog-no-stock > .p-dialog-header {
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  > .p-dialog-title {
+    font-size: 1rem !important;
+    color: #585858 !important;
+  }
+  .p-dialog-header-icons {
+    :hover {
+      outline: none !important;
+      outline-offset: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+      background-color: none !important;
+    }
+    :focus {
+      outline: 0 none !important;
+      outline-offset: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+      background-color: transparent !important;
+    }
+    :active {
+      outline: 0 none;
+      outline-offset: 0;
+      border: none !important;
+      box-shadow: none !important;
+      background-color: none !important;
+    }
+    button {
+      :hover {
+        outline: none !important;
+        outline-offset: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        background-color: none !important;
+      }
+    }
+  }
+}

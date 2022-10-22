@@ -1,0 +1,142 @@
+.container-cards-mis-datos {
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-gap: 20px;
+  min-height: 500px;
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.foto-mis-datos {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 20px !important;
+}
+.datos-mis-datos {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 20px !important;
+  padding: 0 30px;
+  z-index: 10;
+}
+
+.foto-mis-datos > .p-card-body > .p-card-content {
+  display: flex;
+  flex-direction: column;
+}
+.container-image-mis-datos {
+  position: relative;
+  margin: 0 auto;
+  > .p-avatar.p-avatar-xl {
+    width: 6rem;
+    height: 6rem;
+    font-size: 2.5rem;
+  }
+}
+
+.pi-camera {
+  position: absolute;
+  color: #fff;
+  bottom: 0px;
+  right: 2px;
+  font-size: 20px;
+  background-color: #e91e63;
+  padding: 5px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nombre-mis-datos {
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 158%;
+  /* or 47px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0075em;
+  text-transform: capitalize;
+  color: #262626;
+}
+
+.categoria-usuario-mis-datos {
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 158%;
+  /* identical to box height, or 38px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0075em;
+
+  color: #2fb670;
+}
+
+.container-info-mis-datos-inputs {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.container-info-mis-datos-inputs > div > .field > input {
+  width: 100%;
+}
+.container-info-mis-datos-inputs > div > .field > {
+  .p-inputnumber {
+    width: 100%;
+  }
+}
+
+.title-card-mis-datos {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 158%;
+  /* or 44px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0075em;
+
+  color: #3a3a3a;
+}
+
+.label-inputs {
+  font-size: 14px;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+
+.button-cambios-mis-datos {
+  margin: 0 auto;
+  width: 180px;
+}
+
+.button-agregar-otro-domicilio {
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 14px;
+  /* line-height: 17px; */
+  display: flex;
+  align-items: center;
+  color: #33a0ff;
+  border: none;
+  background-color: transparent;
+}
+
+.color-true {
+  display: none !important;
+}
+
+.p-avatar.p-avatar-xl {
+  width: 8rem !important;
+  height: 8rem !important;
+  font-size: 2rem;
+}

@@ -1,0 +1,315 @@
+.a-nav-mega-menu {
+  color: #565555;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 50px;
+  position: relative;
+  text-transform: capitalize;
+  font-family: "Inter", sans-serif;
+  transition: 0.5 ease all;
+  :hover {
+    color: #e91e63;
+  }
+}
+
+.li-mega-menu:hover > a {
+  color: #e91e63;
+  transition: 0.5 ease all;
+}
+
+.container-faded {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 50px;
+}
+header {
+  height: 90px !important;
+}
+.divider {
+  margin: 0 !important;
+}
+.headerOptions {
+  position: relative;
+}
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10000;
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  transition: all ease 1s;
+  box-shadow: 0 4px 2px -2px rgba(179, 170, 170, 0.3);
+  padding: 20px 120px;
+}
+.cart-container {
+  position: relative;
+}
+.product-container {
+  display: flex;
+  margin-bottom: auto;
+  position: relative;
+  width: 300px;
+  height: 100%;
+}
+.product-container nav ul li {
+  list-style: none;
+  margin: 20px 0;
+}
+.product-container nav {
+  margin-right: 0;
+}
+.product-container nav ul li a {
+  cursor: pointer;
+  font-size: 12px;
+  color: #878787;
+  font-weight: 200;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.product-container nav ul li a:hover {
+  text-decoration: none;
+  color: #e91e63;
+}
+.container-faded {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+header {
+  height: 90px !important;
+}
+.divider {
+  margin: 0 !important;
+}
+.headerOptions {
+  position: relative;
+}
+.cart-container {
+  position: relative;
+}
+.product-container {
+  display: flex;
+  margin-bottom: auto;
+  position: relative;
+  width: 300px;
+  height: 100%;
+}
+.product-container nav {
+  margin-right: auto;
+}
+
+.ui.floating.label {
+  top: -12px !important;
+  left: 140% !important;
+}
+.ui.black.button {
+  position: absolute;
+  top: 50%;
+  border-radius: 0px !important;
+}
+
+.ui.vertical.divider {
+  left: 90% !important;
+}
+.all-products-button {
+  background-color: transparent;
+  position: absolute;
+  bottom: 10%;
+  border-radius: 5px !important;
+  border: 1px solid #e91e63;
+  // box-shadow: 0 0 0 1px #1b1c1d inset !important;
+  color: #1b1c1d;
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  outline: 0;
+  vertical-align: baseline;
+  color: #e91e63;
+  margin: 0 0.25em 0 0;
+  padding: 0.78571429em 1.5em 0.78571429em;
+  text-transform: none;
+  text-shadow: none;
+  font-weight: 400;
+  line-height: 1em;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.28571429rem;
+  -webkit-box-shadow: 0 0 0 1px transparent inset,
+    0 0 0 0 rgb(34 36 38 / 15%) inset;
+  box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgb(34 36 38 / 15%) inset;
+  -webkit-user-select: none;
+  transition: all ease 0.5s;
+}
+.all-products-button:hover {
+  background-color: #e91e63;
+  color: #fff;
+}
+
+.main-button-all {
+  margin-top: 20px;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+  position: initial;
+}
+.main-button-all:hover {
+  background-color: #ffff !important;
+  color: #000 !important;
+}
+
+.sub-categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 100%;
+}
+
+.drop3 {
+  width: 100%;
+  height: 165px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.drop {
+  width: 100%;
+  height: 165px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.sub-catego-grif-bano-1 {
+  background-image: url("/img/categories/sub-cate-grife-ban.jpeg");
+}
+
+.sub-catego-grif-bano-2 {
+  background-image: url("/img/categories/sub-cate-grife-cocina.jpeg");
+}
+
+.hogar-img {
+  background-image: url("/img/categories/hogar.jpg") !important;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.drop4 {
+  background-image: url("/img/categories/varios.webp");
+}
+
+.drop5 {
+  background-image: url("/img/categories/sabanas.jpeg");
+}
+
+.muebles-img {
+  background-image: url("/img/categories/Muebles.webp") !important;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.drop6 {
+  background-image: url("/img/categories/muebles-hogar.jpeg");
+}
+
+.drop7 {
+  background-image: url("/img/categories/mueble-bano.webp");
+}
+
+.sanitarios-img{
+  background-image: url("/img/categories/Sanitario.webp") !important;
+  background-position: right !important;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.drop9 {
+  background-image: url("/img/categories/lavatorios.jpeg");
+ 
+}
+
+.drop8 {
+  background-image: url("/img/categories/banera.jpeg");
+  background-position: center !important;
+}
+
+.electro-img{
+  background-image: url("/img/categories/electrodo.jpg") !important;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.drop10 {
+  background-image: url("/img/categories/calefaccion.jpeg");
+ 
+}
+
+.drop11 {
+  background-image: url("/img/categories/ventilacion.png");
+}
+
+.aberturas-img{
+  background-image: url("/img/categories/aberturas.jpeg") !important;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.drop12 {
+  background-image: url("/img/categories/puertas.png");
+ 
+}
+
+.drop13 {
+  background-image: url("/img/categories/ventanas.jpg");
+}

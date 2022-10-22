@@ -1,0 +1,53 @@
+.baruser-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #2b2f38;
+  padding: 12px 120px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  background-color: rgb(241, 241, 241);
+  color: rgb(136, 136, 136);
+  font-weight: 500;
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+  .container-help-baruser {
+    display: flex;
+    align-items: center;
+  }
+  .icon-help {
+    width: 16.5px;
+    height: 16.5px;
+    margin-left: 6.5px;
+    cursor: pointer;
+  }
+  .container-cart-wallet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // width: 160px;
+    margin-left: auto;
+    span {
+      cursor: pointer;
+    }
+    .icon-cart {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.container-seguimiento {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo_inicio {
+  @media screen and (max-width: 900px) {
+    margin-left: auto;
+  }
+}

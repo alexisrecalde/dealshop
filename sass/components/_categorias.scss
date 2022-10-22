@@ -1,0 +1,202 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  width: 100%;
+  height: 460px;
+  > a {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // width: auto;
+    // height: auto;
+    // border-radius: 20px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 158%;
+    /* or 44px */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.0075em;
+    color: #ffffff;
+    display: flex;
+    position: relative;
+    img {
+      transition: transform 0.5s ease;
+    }
+    > span {
+      width: 100%;
+      bottom: 30px;
+      border-radius: 16px;
+      @media screen and (max-width: 900px) {
+        height: 100%;
+        bottom: 0;
+      }
+    }
+  }
+  .div1 {
+    grid-area: 1 / 1 / 5 / 3;
+  }
+  .div2 {
+    grid-area: 5 / 3 / 8 / 5;
+  }
+  .div7 {
+    grid-area: 5 / 5 / 8 / 10;
+  }
+  .div4 {
+    grid-area: 1 / 3 / 5 / 6;
+  }
+  .div3 {
+    grid-area: 1 / 6 / 5 / 8;
+  }
+  .div6 {
+    grid-area: 1 / 8 / 5 / 10;
+  }
+  .div5 {
+    grid-area: 5 / 1 / 8 / 3;
+  }
+}
+.div1:hover img {
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}
+.div2:hover img {
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}
+.div3:hover img {
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}
+.div4:hover img {
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}
+.div5:hover img {
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}
+.div6:hover img {
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}
+
+.div7:hover img {
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}
+
+
+//Electrodomestico-banner
+
+.electrodomesticos-banner {
+  width: 100%;
+  height: 500px;
+  margin-top: 60px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/img/banners/Banner2.jpg");
+  @media screen and (max-width: 900px) {
+    height: 170px;
+    width: 98%;
+  }
+}
+
+.category-mobile-card {
+  width: 100%;
+  ul {
+    width: 100%;
+    height: 180px;
+    li {
+      width: 250px;
+      height: 180px;
+      @media screen and (max-width: 900px) {
+        margin: 0 30px;
+      }
+      @media screen and (max-width: 500px) {
+        margin: 0 10px;
+      }
+      > a {
+        width: 250px;
+        height: 180px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.0075em;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-weight: bold;
+        padding-bottom: 10px;
+        span {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+
+.category-mobile-card-onboarding {
+  width: 100%;
+  > ul {
+    width: 100%;
+    height: 300px;
+    > li {
+      width: 300px;
+      height: 300px;
+      @media screen and (max-width: 900px) {
+        margin: 0 30px;
+      }
+      @media screen and (max-width: 500px) {
+        margin: 0 10px;
+      }
+      > a {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 300px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.0075em;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-weight: bold;
+        padding-bottom: 10px;
+        > img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.example-container div {
+  background: red;
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.react-multiple-carousel__arrow {
+  background: rgb(236 236 236 / 50%) !important;
+}
+
+.react-multiple-carousel__arrow::before {
+  color: #e91e63 !important;
+}

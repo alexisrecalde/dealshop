@@ -1,0 +1,132 @@
+.container-medios-de-pago-page {
+  padding: 20px 110px;
+  background-image: url('/img/Sprinkle.svg');
+  @media screen and (max-width: 900px) {
+    padding: 20px 10px;
+  }
+}
+
+.card-medio-de-pago-page {
+  margin: 20px 0;
+}
+
+.card-medio-de-pago-page > .p-card-body > .p-card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  > img {
+    @media screen and (max-width: 900px) {
+      width: 110px;
+    }
+  }
+}
+.medio-pago-page {
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 900px) {
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  > img {
+    width: 200px;
+    @media screen and (max-width: 900px) {
+      width: 120px;
+    }
+  }
+}
+
+.pago-medio-pago {
+  display: flex;
+  margin: 10px 0;
+  justify-content: center;
+  > img {
+    width: 20px;
+  }
+}
+
+.title-medio-pago-page {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  /* line-height: 158%; */
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  align-items: center;
+  letter-spacing: 0.0075em;
+  color: #262626;
+  text-align: center;
+  margin: 5px auto;
+  @media screen and (max-width: 900px) {
+    font-size: 14px;
+  }
+}
+.ahora-12-img {
+  width: 55px !important;
+}
+
+.img-pagos {
+  justify-content: space-evenly !important;
+}
+
+.title-2-medio-pago-page {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 158%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0075em;
+  color: #696969;
+  margin: 0 auto;
+  @media screen and (max-width: 900px) {
+    font-size: 12px;
+  }
+}
+
+.compra-title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 158%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0075em;
+  color: #262626;
+  @media screen and (max-width: 900px) {
+    font-size: 15px;
+  }
+}
+
+.span-compra-protegida {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 158%;
+  /* identical to box height, or 40px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0075em;
+
+  color: #696969;
+  @media screen and (max-width: 900px) {
+    font-size: 16px;
+  }
+}
+
+.li-compra-protegida {
+  list-style: none;
+  font-weight: 300;
+  font-size: "14px";
+  @media screen and (max-width: 900px) {
+    font-size: 10px;
+  }
+}
