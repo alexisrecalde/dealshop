@@ -197,7 +197,7 @@
   display: inline-block;
   color: #aaa;
   transition: 0.2s;
-  bottom: 10px !important;
+  bottom: 1px !important;
   right: 15px !important;
 }
 .i-share-button {
@@ -277,7 +277,7 @@
   align-items: center;
   border: none;
   position: absolute;
-  height: 37px;
+  height: 30px;
   bottom: 20px;
   /* top: 50%; */
   left: 50%;
@@ -291,6 +291,7 @@
 
 .button-agregar-carrito-favorito {
   position: absolute;
+  height: 30px;
   width: 90%;
   bottom: 50px;
 }
